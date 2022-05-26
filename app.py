@@ -1,5 +1,5 @@
 import requests
-import time
+# import time
 
 def sendPhoto():
     # TOKEN = "5078330798:AAEUwMca46y6fcvTAxSI8wERvp5sgfNQJjw"
@@ -14,7 +14,7 @@ def sendPhoto():
         request = f'https://api.telegram.org/bot{TOKEN}/sendPhoto?chat_id={CHAT_ID}&photo={img}'
 
         requests.post(request)
-        time.sleep(5)
+        # time.sleep(5)
 
 if __name__ == "__main__":
     sendPhoto()
